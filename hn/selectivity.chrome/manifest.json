@@ -5,13 +5,15 @@
  "update_url": "https://raw.github.com/apankrat/internet-improvement-project/master/hn/selectivity.chrome/update.xml",
  "permissions": [
      "tabs",
-     "http://news.ycombinator.com/*"
+     "http://news.ycombinator.com/*",
+     "https://news.ycombinator.com/*"
  ],
  "content_scripts": [
    {
-     "matches": ["http://news.ycombinator.com/*"],
+     "matches": ["http://news.ycombinator.com/*", "https://news.ycombinator.com/*"],
      "js":      ["jquery-1.5.2.min.js", "jquery.color.min.js", "bookmarklet.js"]
    }
  ],
- "version": "1.0"
+ "version": "1.0",
+ "manifest_version": 2
 }
